@@ -92,6 +92,6 @@ public class AjaxController {
         List<AjaxDto> dtoList = DtoList();
         dtoList.add(ajaxDto);
         // data는 리턴하는게 아니라 status code만 리턴함
-        return new ResponseEntity<>(dtoList, HttpStatus.OK);
+        return new ResponseEntity<>(dtoList , HttpStatus.OK);
     }
 }
